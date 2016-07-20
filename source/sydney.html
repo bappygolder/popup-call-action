@@ -20,6 +20,7 @@
 	</head>
 	
 	<body>
+    <div class="body_overlay"></div>
     <div class="fluid-container main-wrapper">
    <div class="overlay-div"></div>
     <div class="container">
@@ -44,6 +45,7 @@
     
        
     <div id="popup">
+    <div class="popup-overlay">
     <div class="cross-btn" id="popupclose">
              <img src="Img/cross-btn.png" class="img-responsive">
           </div>
@@ -60,6 +62,7 @@
               <h2><a href="#">Send a Message</a></h2>
          </div>
     </div>
+    </div><!--popup-overlay-->
     </div>
     
       </div><!--End container-->
@@ -75,7 +78,8 @@ $(function() {
      $('#btn').on('click', function(e)  {
   
 		$('#popup').fadeIn(350);
- 
+		
+ $('.body_overlay').fadeIn(350);
         e.preventDefault();
     });
  
@@ -83,7 +87,7 @@ $(function() {
     $('#popupclose').on('click', function(e)  {
         //var targeted_popup_class = jQuery(this).attr('data-popup-close');
         $('#popup').fadeOut(350);
- 
+    $('.body_overlay').fadeOut(350);
         e.preventDefault();
     }); 
 	
