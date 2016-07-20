@@ -134,14 +134,12 @@ Colors
 .ph-no {
 	color: #223909;
 }
+.call-now-btn h2 a,
 .get-call-back h2 a{
 	color: #fff;
 }
 .get-call-back {
-	background-color: #9ECB70;
-}
-.call-now-btn h2 a {
-	color: #fff;
+	background-color: #879677;
 }
 .call-now-btn {
 	background-color: #61BA00;
