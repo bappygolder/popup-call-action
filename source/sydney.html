@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- Website Title -->
+			<title></title>
+		
+	  <!-- Style sheet link/s -->
+		    <link rel="stylesheet" href="normalize.css" type="text/css"> <!--minified normzlized.css-->
+			<link rel="stylesheet" href="style.css" type="text/css">
+            <link rel="stylesheet" type="text/css" href="style.css">
+	  <!-- Fonts -->
+			<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	  <!-- IE Fix -->	
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+    
+	</head>
+	
+	<body>
+    <div class="fluid-container main-wrapper">
+   <div class="overlay-div"></div>
+    <div class="container">
+    
+       <div class="left_section">
+    
+       <h1>Sydney Web Design</h1>
+                                    
+       <p>Let's get your business to work for you while you sleep.</p>
+    
+       <div class="ph_button">
+       <a class="button stroke  font-size-5  line-height-1 " style="" id="btn" href="tel:0428770086">
+         <span style="font-weight: normal;">Ph: (02) 8015 2838</span>
+       </a>
+       </div>
+       
+                                     
+    
+    
+    
+       </div><!--End left_section-->
+    
+       
+    <div id="popup">
+    <div class="cross-btn" id="popupclose">
+             <img src="Img/cross-btn.png" class="img-responsive">
+          </div>
+    <div class="inner-popup">
+          
+            <h3 class="ph-no">Ph: 02 8015 2838</h3>
+         <div class="call-now-btn">
+              <h2><a href="#">Call Now</a></h2>
+         </div>
+         <div class="get-call-back">
+             <h2><a href="#">Get a call back</a></h2>
+         </div>
+         <div class="get-call-back">
+              <h2><a href="#">Send a Message</a></h2>
+         </div>
+    </div>
+    </div>
+    
+      </div><!--End container-->
+   
+      </div><!--End fluid-container-->
+    
+    
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(function() {
+    //----- OPEN
+     $('#btn').on('click', function(e)  {
+  
+		$('#popup').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    $('#popupclose').on('click', function(e)  {
+        //var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('#popup').fadeOut(350);
+ 
+        e.preventDefault();
+    }); 
+	
+ 
+});
+
+</script>	
+	</body>
+</html>
